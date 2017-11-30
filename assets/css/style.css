@@ -12,6 +12,14 @@ body {
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
 }
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  max-width: 40em;
+}
 h1 {
   font-size: 4rem;
   color: #000;
@@ -36,7 +44,6 @@ p {
   font-size: 1.2em;
   line-height: 1.6;
   color: inherit;
-  max-width: 40em;
 }
 .form {
   margin-top: 3rem;

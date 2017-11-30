@@ -92,13 +92,11 @@ input[type=email] {
   text-align: center;
   padding: 5rem 0;
 }
-<<<<<<< Updated upstream
 .section.left {
   text-align: left;
-=======
+}
 .section p {
   margin: auto;
->>>>>>> Stashed changes
 }
 .section.hero {
   background-image: linear-gradient(134deg, #4A90E2 0%, #9160DA 100%);

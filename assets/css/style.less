@@ -4,9 +4,12 @@
 @tablet:    ~"only screen and (max-width: 959px)";
 @mobile:    ~"only screen and (max-width: 540px)";
 
-@color-headline: #000000;
+@base-size: 16px;
+
+@color-headline: #000;
 @color-copy: #626262;
-@color-main: #4A90E2; 
+@color-copy-invert: #fff;
+@color-main: #4A90E2;
 
 html, body {
 	width: 100%;
@@ -15,14 +18,14 @@ html, body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: @base-size;
     color: @color-copy;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 4rem;
     color: @color-headline;
 }
 
@@ -72,8 +75,27 @@ p {
     }
 }
 
+.invert {
+    color: @color-copy-invert;
+}
+
 .section {
-    .hero {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    min-height: 65vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+
+    &.hero {
         background-image: linear-gradient(-134deg, #438ADC 0%, #9160DA 100%);
+
+        p {
+            font-size: 24px;
+        }
     }
 }

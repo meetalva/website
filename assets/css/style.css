@@ -19,6 +19,7 @@ h4,
 p,
 a {
   max-width: 40em;
+  margin: auto;
 }
 h1 {
   font-size: 4rem;
@@ -107,6 +108,9 @@ input[type=email] {
 }
 .section.hero {
   background-image: linear-gradient(134deg, #4A90E2 0%, #9160DA 100%);
+  min-height: 33vh;
+  display: flex;
+  align-items: center;
 }
 .section.hero h1 {
   font-weight: 400;

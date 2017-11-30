@@ -7,6 +7,7 @@
 @mobile:    ~"only screen and (max-width: 540px)";
 
 @base-size: 16px;
+@small-size: 13px;
 
 @color-headline: #000;
 @color-copy: #626262;
@@ -86,6 +87,11 @@ p {
     }
 }
 
+.dark {
+	background-color: @color-headline;
+	color: @color-copy-invert;
+}
+
 .section {
     overflow: hidden;
     position: relative;
@@ -99,13 +105,17 @@ p {
 
     padding: 5rem 0;
 
+		&.left {
+			text-align: left;
+		}
+
     &.hero {
         background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
 
 
         h1{
          span{
-             
+
          }
         }
 
@@ -115,11 +125,26 @@ p {
     }
 
 		.feature-tiles {
-			.tile {
-				height: 220px;
-				width: 200px;
-				background: @color-primary;
-				border-radius: 5px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+
+			.feature {
+				display: flex;
+				flex-direction: column;
+				margin-left: 2rem;
+
+				.tile {
+					height: 220px;
+					width: 200px;
+					background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
+					border-radius: 5px;
+				}
+
+				.small-copy {
+					font-size: @small-size;
+				}
 			}
 		}
 

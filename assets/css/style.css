@@ -63,6 +63,10 @@ p {
 .invert h4 {
   color: #fff;
 }
+.dark {
+  background-color: #000;
+  color: #fff;
+}
 .section {
   overflow: hidden;
   position: relative;
@@ -75,9 +79,32 @@ p {
   text-align: center;
   padding: 5rem 0;
 }
+.section.left {
+  text-align: left;
+}
 .section.hero {
   background-image: linear-gradient(134deg, #4A90E2 0%, #9160DA 100%);
 }
 .section.hero p {
   font-size: 24px;
+}
+.section .feature-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+.section .feature-tiles .feature {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.section .feature-tiles .feature .tile {
+  height: 220px;
+  width: 200px;
+  background-image: linear-gradient(134deg, #4A90E2 0%, #9160DA 100%);
+  border-radius: 5px;
+}
+.section .feature-tiles .feature .small-copy {
+  font-size: 13px;
 }

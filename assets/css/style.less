@@ -11,6 +11,7 @@
 
 @color-headline: #000;
 @color-copy: #626262;
+@color-copy-grey: #999;
 @color-copy-invert: #fff;
 @color-primary: #4A90E2;
 @color-secondary: #9160DA;
@@ -34,7 +35,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2rem;
     color: @color-headline;
 }
 
@@ -57,6 +58,23 @@ p {
     font-size: 1.2em;
     line-height: 1.6;
     color: inherit;
+    max-width: 40em;
+}
+
+.form{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+input[type=email] {
+    width: 360px;
+    padding: 1.5rem;
+    outline: 0;
+    color: @color-copy-grey;
+    font-size: inherit;
+    border: 1px solid @color-primary;
+    box-shadow: 0 0 10px 0@color-primary;
+    border-radius: 3px;
 }
 
 .centered {
@@ -94,9 +112,7 @@ p {
 
 .section {
     overflow: hidden;
-    position: relative;
-    z-index: 1;
-    padding: 30px;
+    padding: 2rem;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-direction: column;
@@ -105,22 +121,32 @@ p {
 
     padding: 5rem 0;
 
+<<<<<<< Updated upstream
 		&.left {
 			text-align: left;
 		}
+=======
+    p {
+        margin: auto;
+    }
+>>>>>>> Stashed changes
 
     &.hero {
         background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
 
-
         h1{
+            font-weight: 400;
          span{
+<<<<<<< Updated upstream
 
+=======
+            font-weight: 600;
+>>>>>>> Stashed changes
          }
         }
 
         p {
-            font-size: 24px;
+            font-size: 1.5em;
         }
     }
 

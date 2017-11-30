@@ -17,7 +17,7 @@ h1 {
   color: #000;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 2rem;
   color: #000;
 }
 h3 {
@@ -36,6 +36,21 @@ p {
   font-size: 1.2em;
   line-height: 1.6;
   color: inherit;
+  max-width: 40em;
+}
+.form {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+input[type=email] {
+  width: 360px;
+  padding: 1.5rem;
+  outline: 0;
+  color: #999;
+  font-size: inherit;
+  border: 1px solid #4A90E2;
+  box-shadow: 0 0 10px 0 #4A90E2;
+  border-radius: 3px;
 }
 .centered {
   position: relative;
@@ -69,9 +84,7 @@ p {
 }
 .section {
   overflow: hidden;
-  position: relative;
-  z-index: 1;
-  padding: 30px;
+  padding: 2rem;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-direction: column;
@@ -79,14 +92,25 @@ p {
   text-align: center;
   padding: 5rem 0;
 }
+<<<<<<< Updated upstream
 .section.left {
   text-align: left;
+=======
+.section p {
+  margin: auto;
+>>>>>>> Stashed changes
 }
 .section.hero {
   background-image: linear-gradient(134deg, #4A90E2 0%, #9160DA 100%);
 }
+.section.hero h1 {
+  font-weight: 400;
+}
+.section.hero h1 span {
+  font-weight: 600;
+}
 .section.hero p {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 .section .feature-tiles {
   display: flex;

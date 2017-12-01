@@ -63,10 +63,13 @@ p {
 .form{
     margin-top: 3rem;
     margin-bottom: 2rem;
+		display: flex;
+		justify-content: center;
 }
 
 input[type=email] {
-    width: 360px;
+    max-width: 360px;
+		flex-grow: 1;
     padding: 1.5rem;
     outline: 0;
     color: @color-copy-grey;
@@ -126,15 +129,13 @@ input[type=email] {
     &.hero {
         background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
         min-height: 50vh;
-        display: flex;
-        align-items: center;
 
         h1{
-            font-weight: 400;
-         span{
-            font-weight: 600;
-         }
+          font-weight: 400;
         }
+				span{
+					font-weight: 600;
+				}
 
         p {
             font-size: 1.5rem;
@@ -146,7 +147,9 @@ input[type=email] {
 			flex-direction: row;
 			flex-wrap: nowrap;
 			justify-content: flex-start;
-			margin-top: 3rem;
+			margin: 3rem -1rem;
+			padding: 0 1rem;
+			overflow: scroll;
 
 			.feature {
 				display: flex;
@@ -155,6 +158,7 @@ input[type=email] {
 
 				&:last-child {
 					margin-right: 0;
+					padding-right: 1rem;
 				}
 				&:first-child {
 					margin-left: 0;
@@ -178,7 +182,8 @@ input[type=email] {
 
 .wrapper {
 	max-width: 720px;
-	display: inline-block;
+	padding: 0 1rem;
+	margin: auto;
 
 	&.left {
 			text-align: left;

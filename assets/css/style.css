@@ -40,9 +40,12 @@ p {
 .form {
   margin-top: 3rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 input[type=email] {
-  width: 360px;
+  max-width: 360px;
+  flex-grow: 1;
   padding: 1.5rem;
   outline: 0;
   color: #999;
@@ -99,13 +102,11 @@ input[type=email] {
 .section.hero {
   background-image: linear-gradient(134deg, #4A90E2 0%, #9160DA 100%);
   min-height: 50vh;
-  display: flex;
-  align-items: center;
 }
 .section.hero h1 {
   font-weight: 400;
 }
-.section.hero h1 span {
+.section.hero span {
   font-weight: 600;
 }
 .section.hero p {
@@ -116,7 +117,9 @@ input[type=email] {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin-top: 3rem;
+  margin: 3rem -1rem;
+  padding: 0 1rem;
+  overflow: scroll;
 }
 .section .feature-tiles .feature {
   display: flex;
@@ -125,6 +128,7 @@ input[type=email] {
 }
 .section .feature-tiles .feature:last-child {
   margin-right: 0;
+  padding-right: 1rem;
 }
 .section .feature-tiles .feature:first-child {
   margin-left: 0;
@@ -140,7 +144,8 @@ input[type=email] {
 }
 .wrapper {
   max-width: 720px;
-  display: inline-block;
+  padding: 0 1rem;
+  margin: auto;
 }
 .wrapper.left {
   text-align: left;

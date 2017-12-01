@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="220px" viewBox="0 0 200 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>feature-detailed-design</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#438ADC" offset="0%"></stop>
+            <stop stop-color="#9160DA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-640.000000, -1376.000000)">
+            <g id="Group-3-Copy" transform="translate(180.000000, 1376.000000)">
+                <g id="feature-detailed-design" transform="translate(460.000000, 0.000000)">
+                    <rect id="Rectangle-26-Copy" fill="url(#linearGradient-1)" x="0" y="0" width="200" height="220" rx="5"></rect>
+                    <text id="Order-now-the-new-ve" font-family="GTWalsheimMedium, GT Walsheim" font-size="16" font-weight="400" line-spacing="24" fill="#FFFFFF">
+                        <tspan x="15" y="88">Order now</tspan>
+                        <tspan x="15" y="112">the new vehicle</tspan>
+                        <tspan x="15" y="136">pass!</tspan>
+                    </text>
+                    <circle id="Oval-Copy" fill="#FFFFFF" cx="35" cy="35" r="20"></circle>
+                    <rect id="Rectangle-Copy-9" stroke="#FFFFFF" x="15.5" y="169.5" width="83" height="25"></rect>
+                    <text id="ORDER-NOW" font-family="GTWalsheimMedium, GT Walsheim" font-size="10" font-weight="400" fill="#FFFFFF">
+                        <tspan x="27" y="185">ORDER NOW</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

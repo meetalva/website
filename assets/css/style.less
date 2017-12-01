@@ -29,18 +29,13 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1,h2,h3,h4,p,a {
-    max-width: 40em;
-    margin:auto;
-}
-
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: @color-headline;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: @color-headline;
 }
 
@@ -60,7 +55,7 @@ a {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1rem;
     line-height: 1.6;
     color: inherit;
 }
@@ -112,30 +107,25 @@ input[type=email] {
 .dark {
 	background-color: @color-headline;
 	color: @color-copy-invert;
+
+	h1,h2,h3,h4 {
+		color: @color-copy-invert;
+	}
 }
 
 .section {
     overflow: hidden;
-    padding: 2rem;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 
-    padding: 5rem 0;
-
-    &.left {
-        text-align: left;
-    }
-    
-    p {
-        margin: auto;
-    }
+    padding: 6rem 0;
 
     &.hero {
         background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
-        min-height: 33vh;
+        min-height: 50vh;
         display: flex;
         align-items: center;
 
@@ -147,7 +137,7 @@ input[type=email] {
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
     }
 
@@ -155,18 +145,27 @@ input[type=email] {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: nowrap;
-			justify-content: flex-end;
+			justify-content: flex-start;
+			margin-top: 3rem;
 
 			.feature {
 				display: flex;
 				flex-direction: column;
-				margin-left: 2rem;
+				margin: 0 1rem;
+
+				&:last-child {
+					margin-right: 0;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
 
 				.tile {
 					height: 220px;
 					width: 200px;
-					background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
 					border-radius: 5px;
+					margin-bottom: 1rem;
+
 				}
 
 				.small-copy {
@@ -175,4 +174,13 @@ input[type=email] {
 			}
 		}
 
+}
+
+.wrapper {
+	max-width: 720px;
+	display: inline-block;
+
+	&.left {
+			text-align: left;
+	}
 }

@@ -1,32 +1,38 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <title>Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 <body>
-    <section class="section hero invert">
-        <h1>Meet 🙋<span>Karla</span></h1>
-        <p>A radically new design tool that enables cross-functional teams to design digital products.</p>
+  <section class="section hero invert">
+    <div class="wrapper">
+      <h1>Meet 🙋<span>Karla</span></h1>
+      <p>A radically new design tool that enables cross-functional teams to design digital products.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrapper">
+      <h2>Sign up for early access</h2>
+      <p>Karla is work in progress, but constantly evolving. Sign up with your email to be the first in line when Karla is released.</p>
+    </div>
+    <form class="form">
+		    <input type="email" placeholder="Your E-Mail Address" />
+	  </form>
+      <a href="https://github.com/meetkarla" target="_blank">Or help developing Karla on github</a>
     </section>
-    
-    <section class="section">
-        <h2>Sign up for early access</h2>
-        <p>Karla is work in progress, but constantly evolving. Sign up with your email to be the first in line when Karla is released.</p>
-        <form class="form">
-			<input type="email" placeholder="Your E-Mail Address" />
-		</form>
-        <a href="https://github.com/meetkarla" target="_blank">Or help developing Karla on github</a>
-    </section>
-    
-    <section class="section left dark">
-        <h2 class="invert">Design and engineering, tied together</h2>
+
+    <section class="section dark">
+      <div class="wrapper left">
+        <h2>Design and engineering, tied together</h2>
         <p>You can start with a minimal set of components to sketch concepts like wireframes and do fast iterations with your development team to create and enrich components, from atoms to modules and entire pages with production-ready code.</p>
         <section class="feature-tiles">
           <div class="feature">
             <div class="tile">
+              <img src="./assets/images/feature-wireframe.svg" />
             </div>
             <p class="small-copy">
               Wireframe
@@ -34,6 +40,7 @@
           </div>
           <div class="feature">
             <div class="tile">
+              <img src="./assets/images/feature-design-mockup.svg" />
             </div>
             <p class="small-copy">
               Design Mockup
@@ -41,6 +48,7 @@
           </div>
           <div class="feature">
             <div class="tile">
+              <img src="./assets/images/feature-detailed-design.svg" />
             </div>
             <p class="small-copy">
               Detailed Design
@@ -48,20 +56,25 @@
           </div>
           <div class="feature">
             <div class="tile">
+              <img src="./assets/images/feature-design-and-code.svg" />
             </div>
             <p class="small-copy">
               Design &amp; Code
             </p>
           </div>
         </section>
+      </div>
     </section>
 
     <section class="section">
+      <div class="wrapper">
         <h2>Crossfunctional single source of truth</h2>
         <p>Maintaining a separate design library next to the developer’s component library is quite weird. That’s why Karla lets you design with exactly the same code components your engineers use for the final application.</p>
+      </div>
     </section>
 
     <section class="section">
+      <div class="wrapper">
         <h2>Based on React components</h2>
         <p>All components are based on React, that means you are designing with real code instead of just static shadow copies in a former design tool. But if youre new component is not already developed, you can just drop in a PNG out of Sketch  (Constraint driven design)</p>
 
@@ -70,13 +83,16 @@
 
         <h3>Prototype design with live data</h3>
         <p>You want to translate your designs into a dozen of languages? Or want to connect to real data? Don’t worry, Karla supports that.</p>
+      </div>
     </section>
 
     <section class="section">
+      <div class="wrapper">
         <h2>Different user, different perspective</h2>
         <p>Karla either connects to a already existing component library or assists you creating a new one. So as a designer you use a shared library with all your developers and always have the latest version.</p>
 
         <a>Learn more about library requirements</a>
+      </div>
     </section>
 
     <script type="text/javascript" src="assets/js/script.js"></script>

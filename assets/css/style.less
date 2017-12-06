@@ -54,7 +54,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.75rem;
     color: @color-headline;
     .font-medium;
 }
@@ -141,7 +141,7 @@ input[type=email] {
     flex-direction: column;*/
     text-align: center;
 
-    padding: 6rem 0;
+    padding: 6rem 0 10rem;
 
     &.hero {
         
@@ -253,6 +253,23 @@ input[type=email] {
         &-image {
             width: 1080px;
             margin-left: 260px;
+        }
+    }
+    
+    &-additional {
+        max-width: 320px;
+        
+        h3 {
+            margin: 0.75rem 0 0.5rem;
+        }
+        
+        img {
+            width: 50px;
+        }
+        
+        &:last-of-type {
+            text-align: right;
+            margin: -50px 0 0 auto;
         }
     }
 }

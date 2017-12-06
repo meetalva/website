@@ -39,7 +39,7 @@ html, body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     color: @color-headline;
     .font-medium;
     
@@ -152,22 +152,6 @@ input[type=email] {
     text-align: center;
 
     padding: 6rem 0 10rem;
-
-    &.hero {
-        
-        min-height: 50vh;
-
-        h1{
-          font-weight: 400;
-        }
-				span{
-					font-weight: 600;
-				}
-
-        p {
-            font-size: 1.5rem;
-        }
-    }
     
     &.blue {
         background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
@@ -210,6 +194,39 @@ input[type=email] {
 		}
 }
 
+
+.hero {
+    padding-bottom: 0;
+    
+    h1 {
+        .font-regular;
+        
+        span {
+            .font-medium;
+        }
+        
+        margin: 2rem 0 0 0;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        margin: 0 auto;
+        max-width: 540px;
+        
+        &.small {
+            font-size: @small-size;
+            opacity: 0.75;
+            margin: 1rem auto;
+        }
+    }
+    
+    &-image {
+        width: 1080px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+        display: block;
+        margin: 8rem auto 0;
+    }
+}
 
 .features {
     background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);

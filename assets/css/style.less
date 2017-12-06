@@ -1,6 +1,6 @@
 // out: ./style.css, sourcemap: false, compress: false
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fast.fonts.net/cssapi/e7aa785c-62d1-4596-b02e-197d04a1d663.css');
 
 @desktop:   ~"only screen and (max-width: 1280px)";
 @tablet:    ~"only screen and (max-width: 959px)";
@@ -16,12 +16,21 @@
 @color-primary: #4A90E2;
 @color-secondary: #9160DA;
 
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Larsseit W01', sans-serif;
     font-weight: 400;
     font-size: @base-size;
     color: @color-copy;
@@ -32,21 +41,25 @@ html, body {
 h1 {
     font-size: 5rem;
     color: @color-headline;
+    .font-medium;
 }
 
 h2 {
     font-size: 3.5rem;
     color: @color-headline;
+    .font-medium;
 }
 
 h3 {
     font-size: 1.25em;
     color: @color-headline;
+    .font-medium;
 }
 
 h4 {
     font-size: 1em;
     color: @color-headline;
+    .font-medium;
 }
 
 a {

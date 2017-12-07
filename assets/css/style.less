@@ -16,6 +16,8 @@
 @color-primary: #4A90E2;
 @color-secondary: #9160DA;
 
+@color-light: #F4F6FA;
+
 
 .font-regular {
     font-weight: 400;
@@ -280,6 +282,7 @@ input[type=email] {
         &-image {
             width: 1080px;
             margin-left: 260px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
         }
     }
     
@@ -303,6 +306,49 @@ input[type=email] {
 
 .ssot-image {
     width: 636px;
+}
+
+.about {
+    background-color: @color-light;
+    
+    p {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    
+    &-people {
+        width: 520px;
+        margin: 0 auto;
+        
+        &-item {
+            width: 240px;
+            border: 1px solid #e9eaef;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;
+            margin: 10px;
+            float: left;
+            box-sizing: border-box;
+            
+            h4 {
+                font-size: 1rem;
+            }
+            
+            p {
+                font-size: @small-size;
+            }
+        }
+        
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+}
+
+.footer {
+    background-color: @color-headline;
 }
 
 .wrapper {

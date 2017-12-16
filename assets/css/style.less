@@ -113,6 +113,14 @@ input[type=email] {
     font-size: @small-size;
 }
 
+.button {
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: white;
+	color: @color-primary;
+	border-radius: 3px;
+}
+
 .centered {
     position: relative;
     text-align: center;
@@ -220,6 +228,7 @@ input[type=email] {
         font-size: 1.2rem;
         margin: 0 auto;
         max-width: 540px;
+		margin-bottom: 18px;
         
         &.small {
             font-size: @small-size;
@@ -229,11 +238,14 @@ input[type=email] {
     }
     
     &-github {
+		margin-left: 12px;
         img {
             width: 25px;
             height: 25px;
+			vertical-align: middle;
         }
     }
+	
     
     &-image {
         width: 90%;

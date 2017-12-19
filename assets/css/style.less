@@ -45,7 +45,7 @@ h1 {
 
     @media @mobile {
         font-size: 4rem;
-    }    
+    }
 }
 
 h2 {
@@ -92,15 +92,18 @@ p {
 }
 
 input[type=email] {
-    max-width: 360px;
+    max-width: 420px;
+    min-width: 300px;
 		//flex-grow: 1;
-    padding: 1.5rem;
+    padding: 15px;
+    // min-height: 46px;
+    max-height: 46px;
     outline: 0;
     color: @color-copy-grey;
     font-size: inherit;
     border: 1px solid @color-primary;
-    box-shadow: 0 0 10px 0@color-primary;
-    border-radius: 3px;
+    // box-shadow: 0 0 10px 0@color-primary;
+    border-radius: 3px 0 0 3px;
 }
 
 
@@ -119,6 +122,19 @@ input[type=email] {
 	background-color: white;
 	color: @color-primary;
 	border-radius: 3px;
+  font-size: inherit;
+  line-height: inherit;
+
+  &.inverted {
+    background-color: @color-primary;
+    color: white;
+  }
+
+  &.submit {
+    border-radius: 0 3px 3px 0;
+    margin-left: -6px;
+    height: 50px;
+  }
 }
 
 .centered {
@@ -167,7 +183,7 @@ input[type=email] {
     text-align: center;
 
     padding: 6rem 0 10rem;
-    
+
     &.blue {
         background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
     }
@@ -213,30 +229,30 @@ input[type=email] {
 
 .hero {
     padding-bottom: 0;
-    
+
     h1 {
         .font-regular;
-        
+
         span {
             .font-medium;
         }
-        
+
         margin: 2rem 0 0 0;
     }
-    
+
     p {
         font-size: 1.2rem;
         margin: 0 auto;
         max-width: 540px;
 		margin-bottom: 18px;
-        
+
         &.small {
             font-size: @small-size;
             opacity: 0.75;
             margin: 1rem auto;
         }
     }
-    
+
     &-github {
 		margin-left: 12px;
         img {
@@ -245,8 +261,8 @@ input[type=email] {
 			vertical-align: middle;
         }
     }
-	
-    
+
+
     &-image {
         width: 90%;
         max-width: 1080px;
@@ -260,36 +276,36 @@ input[type=email] {
     background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
     text-align: left;
     overflow: hidden;
-    
+
     h2, p {
         max-width: 540px;
     }
-    
+
     &-application {
         position: relative;
         margin: 8rem 0;
-        display: flex; 
+        display: flex;
         flex-direction: column;
 
         @media @mobile {
             margin: 6rem 0;
         }
-        
+
         &-item {
             max-width: 200px;
             position: absolute;
             top: 250px;
 
             @media @mobile {
-                max-width: 100%; 
+                max-width: 100%;
                 position: static;
                 margin: 2rem 0 0 0;
             }
-            
+
             h4 {
                 position: relative;
                 display: inline-block;
-                
+
                 &:after {
                     content: '';
                     position: absolute;
@@ -303,22 +319,22 @@ input[type=email] {
                     @media @mobile {
                         display: none;
                     }
-                }   
+                }
             }
-            
+
             p {
                 font-size: @small-size;
                 margin: 0.5rem 0;
             }
-            
+
             &:first-of-type {
                 top: 95px;
             }
             &:last-of-type {
                 top: 400px;
             }
-            
-            
+
+
         }
 
         &-image {
@@ -333,18 +349,18 @@ input[type=email] {
             }
         }
     }
-    
+
     &-additional {
         max-width: 320px;
-        
+
         h3 {
             margin: 0.75rem 0 0.5rem;
         }
-        
+
         img {
             width: 50px;
         }
-        
+
         &:last-of-type {
             text-align: right;
             margin: -50px 0 0 auto;
@@ -364,12 +380,12 @@ input[type=email] {
 
 .about {
     background-color: @color-light;
-    
+
     p {
         max-width: 540px;
         margin: 0 auto;
     }
-    
+
     &-people {
         max-width: 520px;
         margin: 0 auto;
@@ -379,7 +395,7 @@ input[type=email] {
         @media @mobile {
             grid-template-columns: 1fr;
         }
-        
+
         &-item {
             border: 1px solid #e9eaef;
             padding: 20px;
@@ -387,16 +403,16 @@ input[type=email] {
             background-color: white;
             margin: 10px;
             box-sizing: border-box;
-            
+
             h4 {
                 font-size: 1rem;
             }
-            
+
             p {
                 font-size: @small-size;
             }
         }
-        
+
         &:after {
             content: '';
             display: block;

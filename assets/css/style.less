@@ -11,8 +11,8 @@
 @color-copy: #626262;
 @color-copy-grey: #999;
 @color-copy-invert: #fff;
-@color-primary: #4A90E2;
-@color-secondary: #9160DA;
+@color-primary: #0070D6;
+@color-secondary: #2287E5;
 
 @color-light: #F4F6FA;
 
@@ -22,7 +22,7 @@
 }
 
 .font-medium {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 html, body {
@@ -132,6 +132,7 @@ input[type=email] {
 
   &.submit {
     border-radius: 0 3px 3px 0;
+    border: 0;
     margin-left: -6px;
     height: 50px;
   }
@@ -185,7 +186,7 @@ input[type=email] {
     padding: 6rem 0 10rem;
 
     &.blue {
-        background-image: linear-gradient(134deg, @color-primary 0%, @color-secondary 100%);
+        background-image: linear-gradient(-134deg, @color-primary 0%, @color-secondary 100%);
     }
 
 		.feature-tiles {
@@ -229,6 +230,7 @@ input[type=email] {
 
 .hero {
     padding-bottom: 0;
+    overflow: hidden;
 
     h1 {
         .font-regular;
@@ -244,7 +246,7 @@ input[type=email] {
         font-size: 1.2rem;
         margin: 0 auto;
         max-width: 540px;
-		margin-bottom: 18px;
+		    margin-bottom: 18px;
 
         &.small {
             font-size: @small-size;

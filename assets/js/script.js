@@ -1,19 +1,25 @@
-var OSName="Unknown OS";
-if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
-if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
-if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
-
-console.log(navigator.appVersion);
-console.log('Your OS: '+OSName);
 console.log('https://github.com/meetalva/alva/releases/latest/')
 
-function httpGet(theUrl)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+function getOS() {
+	var button=document.getElementById("download-btn");
+	var OSLink="https://github.com/meetalva/alva/releases/download/v0.5.0/";
+	var buttonText=button.innerHTML;
+	if (navigator.appVersion.indexOf("Win")!=-1) {
+		OSLink += "Alva-0.5.0.exe";
+		buttonText += " for Windows";
+	}
+	if (navigator.appVersion.indexOf("Mac")!=-1) {
+		OSLink += "Alva-0.5.0.dmg";
+		buttonText += " for macOS";
+	}
+	if (navigator.appVersion.indexOf("X11")!=-1) OSLink="UNIX"; //Unix
+	if (navigator.appVersion.indexOf("Linux")!=-1) OSLink="Linux"; //Linux
+
+	console.log(OSLink);
+	button.href=OSLink;
+	button.innerHTML=buttonText;
 }
 
-httpGet('github.com/meetalva/alva/releases/latest/');
+window.onload = function(){
+	getOS();
+}

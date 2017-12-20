@@ -423,6 +423,41 @@ input[type=email] {
     }
 }
 
+.social {
+    display: block;
+    margin: 42px 0;
+
+    &-item {
+        padding: 12px 8px;
+        margin: 0 8px;
+        border: 1px solid @color-primary;
+        border-radius: 5px;
+        color: @color-primary;
+
+        &.twitter::before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: '';
+            background: url(../images/social-twitter.svg) no-repeat;
+            background-position: center;
+            background-size: 16px 16px;
+            margin-right: 8px;
+        }
+
+        &.facebook::before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: '';
+            background: url(../images/social-facebook.svg) no-repeat;
+            background-position: center;
+            background-size: 16px 16px;
+            margin-right: 8px;
+        }
+    }
+}
+
 .footer {
     background-color: @color-headline;
     padding-bottom: 6rem;

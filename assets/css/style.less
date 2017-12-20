@@ -434,26 +434,25 @@ input[type=email] {
         border-radius: 5px;
         color: @color-primary;
 
-        &.twitter::before {
+        &::before {
             display: inline-block;
             width: 16px;
             height: 16px;
+            margin: 0 8px -2px 0;
+        }
+
+        &.twitter::before {
             content: '';
             background: url(../images/social-twitter.svg) no-repeat;
             background-position: center;
             background-size: 16px 16px;
-            margin-right: 8px;
         }
 
         &.facebook::before {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
             content: '';
             background: url(../images/social-facebook.svg) no-repeat;
             background-position: center;
             background-size: 16px 16px;
-            margin-right: 8px;
         }
     }
 }

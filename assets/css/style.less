@@ -90,6 +90,10 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     color: inherit;
+	
+	&.small-copy {
+		font-size: @small-size;
+	}
 }
 
 .form{
@@ -183,42 +187,40 @@ input[type=email] {
         background-image: linear-gradient(-134deg, @color-primary 0%, @color-secondary 100%);
     }
 
-		.feature-tiles {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: flex-start;
-			margin: 3rem -1rem;
-			padding: 0 1rem;
-            overflow: scroll;
-            scroll-behavior: smooth;
+	.feature-tiles {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		margin: 3rem -1rem;
+		padding: 0 1rem;
+		overflow: scroll;
+		scroll-behavior: smooth;
 
-			.feature {
-				//display: flex;
-				//flex-direction: column;
-				margin: 0 1rem;
+		.feature {
+			//display: flex;
+			//flex-direction: column;
+			margin: 0 1rem;
 
-				&:last-child {
-					margin-right: 0;
-					padding-right: 1rem;
-				}
-				&:first-child {
-					margin-left: 0;
-				}
-
-				.tile {
-					height: 220px;
-					width: 200px;
-					border-radius: 5px;
-					margin-bottom: 1rem;
-
-				}
-
-				.small-copy {
-					font-size: @small-size;
-				}
+			&:last-child {
+				margin-right: 0;
+				padding-right: 1rem;
 			}
+			&:first-child {
+				margin-left: 0;
+			}
+
+			.tile {
+				height: 220px;
+				width: 200px;
+				border-radius: 5px;
+				margin-bottom: 1rem;
+
+			}
+
+			
 		}
+	}
 }
 
 
@@ -300,6 +302,20 @@ input[type=email] {
 	p {
 		max-width: 480px;
 		margin: 0 auto;
+	}
+}
+
+.source {
+	&-image {
+		width: 404px;
+		margin: 30px auto;
+	}
+}
+
+.contribute {
+	.button {
+		background: @color-primary;
+		color: #fff;
 	}
 }
 

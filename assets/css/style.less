@@ -429,8 +429,13 @@ input[type=email] {
 }
 
 .social {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 42px 0;
+
+    @media @mobile {
+        flex-direction: column;
+    }
 
     &-item {
         padding: 12px 8px;
@@ -438,6 +443,10 @@ input[type=email] {
         border: 1px solid @color-primary;
         border-radius: 5px;
         color: @color-primary;
+
+        @media @mobile {
+            margin: 8px 0;
+        }
 
         &::before {
             display: inline-block;

@@ -7,7 +7,7 @@
 @base-size: 16px;
 @small-size: 13px;
 
-@color-headline: #000;
+@color-headline: #151518;
 @color-copy: #626262;
 @color-copy-grey: #999;
 @color-copy-invert: #fff;
@@ -17,12 +17,16 @@
 @color-light: #F4F6FA;
 
 
+.font-light {
+	font-weight: 200;
+}
+
 .font-regular {
     font-weight: 400;
 }
 
 .font-medium {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 html, body {
@@ -39,7 +43,7 @@ html, body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 7rem;
     color: @color-headline;
     .font-medium;
 
@@ -118,44 +122,29 @@ input[type=email] {
 
 .button {
 	display: inline-block;
-	padding: 12px 24px;
+	padding: 12px 24px 15px;
 	background-color: white;
-	color: @color-primary;
+	color: @color-headline;
 	border-radius: 3px;
-  font-size: inherit;
-  line-height: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	transition: opacity 0.2s;
 
-  &.inverted {
-    background-color: @color-primary;
-    color: white;
-  }
+	&:hover {
+		opacity: 0.9;
+	}
 
-  &.submit {
-    border-radius: 0 3px 3px 0;
-    border: 0;
-    margin-left: -6px;
-    height: 50px;
-  }
-}
+	&.inverted {
+		background-color: @color-primary;
+		color: white;
+	}
 
-.centered {
-    position: relative;
-    text-align: center;
-
-    &:before {
-        content:'';
-        display:inline-block;
-        height:100%;
-        vertical-align:middle;
-        margin-right:-0.25em;
-    }
-
-    .centered-inner {
-        position:relative;
-        display:inline-block;
-        vertical-align:middle;
-        z-index: 10;
-    }
+	&.submit {
+		border-radius: 0 3px 3px 0;
+		border: 0;
+		margin-left: -6px;
+		height: 50px;
+	}
 }
 
 .invert {
@@ -231,29 +220,37 @@ input[type=email] {
 .hero {
     padding-bottom: 0;
     overflow: hidden;
+	
+	.wrapper {
+		max-width: none;
+		width: 75%;
+	}
 
     h1 {
-        .font-regular;
+        .font-light;
+		margin: 10vh 0 0 0;
 
-        span {
+        b {
             .font-medium;
         }
+		
+		u {
+			border-bottom: 5px solid currentColor;
+			text-decoration: none;
+		}
 
-        margin: 2rem 0 0 0;
+        
     }
 
     p {
-        font-size: 1.2rem;
-        margin: 0 auto;
-        max-width: 540px;
-		    margin-bottom: 18px;
-
-        &.small {
-            font-size: @small-size;
-            opacity: 0.75;
-            margin: 1rem auto;
-        }
+		font-size: 1.2rem;
+		max-width: 540px;
+		margin: 72px 0 24px;
     }
+	
+	.button {
+		margin-top: 2rem;
+	}
 
     &-github {
 		margin-left: 12px;

@@ -126,7 +126,7 @@ input[type=email] {
 
 .button {
 	display: inline-block;
-	padding: 12px 24px 15px;
+	padding: 12px 24px;
 	background-color: white;
 	color: @color-headline;
 	border-radius: 3px;
@@ -243,10 +243,8 @@ input[type=email] {
 			border-bottom: 5px solid currentColor;
 			text-decoration: none;
 		}
-
-        
     }
-
+	
     p {
 		font-size: 1.2rem;
 		max-width: 540px;
@@ -265,15 +263,44 @@ input[type=email] {
 			vertical-align: middle;
         }
     }
+}
 
+.application {
+	position: relative;
+	padding: 14rem 0 4rem;
+	
+	img {
+		display: block;
+		width: 100%;
+		box-shadow: 0 5px 30px rgba(0,0,0,0.15);
+		border-radius: 3px;
+		width: 90%;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		background-color: @color-headline;
+		z-index: -1;
+		margin-top: -1px;
+	}
+}
 
-    &-image {
-        width: 90%;
-        max-width: 1080px;
-        box-shadow: 0 2px 20px rgba(0,0,0,0.15);
-        display: block;
-        margin: 8rem auto 0;
-    }
+.mail {
+	padding-top: 0;
+	padding-bottom: 8rem;
+	
+	p {
+		max-width: 480px;
+		margin: 0 auto;
+	}
 }
 
 .features {

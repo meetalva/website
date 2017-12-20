@@ -78,8 +78,12 @@ h4 {
 }
 
 a {
-    text-decoration: none;
-    color: @color-primary;
+    text-decoration: underline;
+    color: inherit;
+	
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 p {
@@ -129,6 +133,7 @@ input[type=email] {
 	font-size: inherit;
 	line-height: inherit;
 	transition: opacity 0.2s;
+	text-decoration: none;
 
 	&:hover {
 		opacity: 0.9;

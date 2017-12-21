@@ -110,17 +110,43 @@ p {
 }
 
 input[type=email] {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
     max-width: 420px;
+    min-width: 300px;
     padding: 15px;
-    -webkit-appearance: none;
-    max-height: 46px;
+    height: 50px;
     outline: 0;
     color: @color-copy-grey;
     font-size: inherit;
     border: 1px solid @color-primary;
-    border-radius: 3px 0 0 3px;
-}
+    border-radius: 3px;
+    -webkit-appearance: none;
 
+    ~ .button {
+        box-sizing: border-box;
+        height: 50px;
+        margin-top: 15px;
+        border: 0;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @media (min-width: 422px) {
+        display: inline-block;
+        border-radius: 3px 0 0 3px;
+
+        ~ .button {
+            border-radius: 0 3px 3px 0;
+            margin-top: 0;
+            margin-left: -6px;
+        }
+    }
+}
 
 .badge {
     border: 1px solid white;
@@ -150,13 +176,6 @@ input[type=email] {
 	&.inverted {
 		background-color: @color-primary;
 		color: white;
-	}
-
-	&.submit {
-		border-radius: 0 3px 3px 0;
-		border: 0;
-		margin-left: -6px;
-		height: 50px;
 	}
 }
 

@@ -19,7 +19,7 @@ To develop frontend sources you start the local development
 setup like this:
 
 ```sh
-npm start # starts a server at http://localhost:8080
+npm start # starts a server at http://localhost:5000
 ```
 
 ## Contribute

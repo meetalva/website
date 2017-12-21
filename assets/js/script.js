@@ -1,8 +1,3 @@
-window.onload = function() {
-  const os = getOS();
-  latestOSRelease(os);
-};
-
 function getOS() {
   var OS = "undefinedOS";
   if (navigator.appVersion.indexOf("Win") != -1)
@@ -32,3 +27,8 @@ function generateDownloadLink(url, os) {
   button.href = url;
   button.innerHTML = buttonText + " for " + os.name;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const os = getOS();
+  latestOSRelease(os);
+});

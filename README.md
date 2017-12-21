@@ -12,13 +12,14 @@ $ git clone https://github.com/meetalva/website.git
 cd website
 npm install
 ```
+
 ## Usage
 
 To develop frontend sources you start the local development
 setup like this:
 
 ```sh
-$ npm run watch
+npm start # starts a server at http://localhost:8080
 ```
 
 ## Contribute

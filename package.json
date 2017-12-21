@@ -15,9 +15,9 @@
     "serve": "^6.4.3"
   },
   "scripts": {
-    "build": "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' assets/css/style.less > assets/css/style.css",
-    "deploy": "node ./scripts/deploy.js",
-    "start": "concurrently \"npm run watch\" \"serve\"",
+    "build": "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' src/style.less > lib/css/style.css",
+    "deploy": "netlify deploy",
+    "start": "concurrently \"npm run watch\" \"serve lib\"",
     "watch": "nodemon -e less -x \"npm run build\""
   },
   "now": {

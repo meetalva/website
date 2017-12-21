@@ -24,6 +24,8 @@ async function main(cli) {
         process.exit(1);
     }
 
+    await execa('now', ['login', '--token', process.env.NOW_TOKEN], {stdio: 'inherit'});
+    await execa('now', ['switch', 'meetalva'], {stdio: 'inherit'});
     await execa('now', ['--static', '--public', '--token', process.env.NOW_TOKEN], {stdio: 'inherit'});
 
     if (cli.flags.production || (process.env.TRAVIS_BRANCH === 'master' && process.env.TRAVIS_PULL_REQUEST === 'false')) {

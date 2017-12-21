@@ -255,19 +255,38 @@ input[type=email] {
 .hero {
     padding-bottom: 0;
     overflow: hidden;
+	padding-top: 3rem;
 
 	.wrapper {
 		max-width: none;
 		width: 75%;
 		
+		
 		@media @mobile {
 			width: 90%;
+		}
+	}
+	
+	.hero-links {
+		a {
+			margin-right: 12px;
+			text-decoration: none;
+			opacity: 0.5;
+			
+			img {
+				margin-right: 6px;
+			}
+			
+			&:hover {
+				opacity: 0.75;
+			}
 		}
 	}
 
     h1 {
         .font-light;
-		margin: 10vh 0 0 0;
+		margin: 15vh 0 0 0;
+		padding-top: 0rem;
 		
 		@media @mobile {
 			margin-top: 0;

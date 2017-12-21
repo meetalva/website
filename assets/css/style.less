@@ -187,6 +187,7 @@ input[type=email] {
 
     &.blue {
         background-image: linear-gradient(-134deg, @color-primary 0%, @color-secondary 100%);
+				color: white;
     }
 
 	.feature-tiles {
@@ -217,6 +218,12 @@ input[type=email] {
 				width: 200px;
 				border-radius: 5px;
 				margin-bottom: 1rem;
+
+				img {
+					object-fit: cover;
+					max-height: 100%;
+					max-width: 100%;
+				}
 
 			}
 
@@ -491,13 +498,10 @@ input[type=email] {
     align-items: center;
     margin: 42px 0;
 
-<<<<<<< HEAD
 		a {
 			text-decoration: none;
 		}
-
-=======
->>>>>>> fix merge conflicts
+		
     @media @mobile {
         flex-direction: column;
     }

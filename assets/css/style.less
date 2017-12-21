@@ -46,9 +46,13 @@ h1 {
     font-size: 7rem;
     color: @color-headline;
     .font-medium;
+	
+	@media @tablet {
+		font-size: 4rem;
+	}
 
     @media @mobile {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
@@ -107,16 +111,13 @@ p {
 
 input[type=email] {
     max-width: 420px;
-    min-width: 300px;
-		//flex-grow: 1;
     padding: 15px;
-    // min-height: 46px;
+    -webkit-appearance: none;
     max-height: 46px;
     outline: 0;
     color: @color-copy-grey;
     font-size: inherit;
     border: 1px solid @color-primary;
-    // box-shadow: 0 0 10px 0@color-primary;
     border-radius: 3px 0 0 3px;
 }
 
@@ -140,6 +141,7 @@ input[type=email] {
 	line-height: inherit;
 	transition: opacity 0.2s;
 	text-decoration: none;
+	-webkit-appearance: none;
 
 	&:hover {
 		opacity: 0.9;
@@ -176,14 +178,12 @@ input[type=email] {
 }
 
 .section {
-    /*overflow: hidden;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-direction: column;
-    flex-direction: column;*/
     text-align: center;
-
     padding: 6rem 0 10rem;
+	
+	@media @mobile {
+		padding: 3rem 0 3rem;
+	}
 
     &.blue {
         background-image: linear-gradient(-134deg, @color-primary 0%, @color-secondary 100%);
@@ -240,11 +240,19 @@ input[type=email] {
 	.wrapper {
 		max-width: none;
 		width: 75%;
+		
+		@media @mobile {
+			width: 90%;
+		}
 	}
 
     h1 {
         .font-light;
 		margin: 10vh 0 0 0;
+		
+		@media @mobile {
+			margin-top: 0;
+		}
 
         b {
             .font-medium;
@@ -253,6 +261,14 @@ input[type=email] {
 		u {
 			border-bottom: 5px solid currentColor;
 			text-decoration: none;
+			
+			@media @tablet {
+				border-width: 3px;
+			}
+			
+			@media @mobile {
+				border-width: 2px;
+			}
 		}
     }
 
@@ -286,6 +302,10 @@ input[type=email] {
 .application {
 	position: relative;
 	padding: 14rem 0 4rem;
+	
+	@media @mobile {
+		padding-top: 4rem;
+	}
 
 	img {
 		display: block;
@@ -314,16 +334,22 @@ input[type=email] {
 .mail {
 	padding-top: 0;
 	padding-bottom: 8rem;
+	
+	@media @mobile {
+		padding-bottom: 4rem;
+	}
 
 	p {
 		max-width: 480px;
 		margin: 0 auto;
+		width: 90%;
 	}
 }
 
 .source {
 	&-image {
-		width: 404px;
+		max-width: 404px;
+		width: 90%;
 		margin: 30px auto;
 	}
 }
@@ -333,6 +359,7 @@ input[type=email] {
 		background: @color-primary;
 		color: #fff;
 		margin-top: 42px;
+		
 	}
 }
 
@@ -544,12 +571,14 @@ input[type=email] {
 .footer {
     background-color: @color-headline;
     padding-bottom: 6rem;
+	color: #fff;
 }
 
 .wrapper {
 	max-width: 720px;
 	padding: 0 1rem;
 	margin: auto;
+	width: 90%;
 
 	&.left {
 			text-align: left;

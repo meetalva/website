@@ -84,6 +84,7 @@ a {
 
 	&:hover {
 		text-decoration: none;
+		opacity: 0.8;
 	}
 }
 
@@ -186,6 +187,7 @@ input[type=email] {
 
     &.blue {
         background-image: linear-gradient(-134deg, @color-primary 0%, @color-secondary 100%);
+				color: white;
     }
 
 	.feature-tiles {
@@ -216,6 +218,12 @@ input[type=email] {
 				width: 200px;
 				border-radius: 5px;
 				margin-bottom: 1rem;
+
+				img {
+					object-fit: cover;
+					max-height: 100%;
+					max-width: 100%;
+				}
 
 			}
 
@@ -493,7 +501,7 @@ input[type=email] {
 		a {
 			text-decoration: none;
 		}
-
+		
     @media @mobile {
         flex-direction: column;
     }

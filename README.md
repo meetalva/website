@@ -9,7 +9,7 @@ This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go che
 
 ```sh
 $ git clone https://github.com/meetalva/website.git
-cd meetalva.github.io
+cd website
 npm install
 ```
 ## Usage
@@ -23,4 +23,4 @@ $ npm run watch
 
 ## Contribute
 
-Feel free to dive in! [Open an issue](https://github.com/meetalva/meetalva.github.io/issues/new) or submit a [Pull Request](https://github.com/meetalva/meetalva.github.io/pull/new/master). :heart:
+Feel free to dive in! [Open an issue](https://github.com/meetalva/website/issues/new) or submit a [Pull Request](https://github.com/meetalva/website/pull/new/master). :heart:

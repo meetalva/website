@@ -1,0 +1,33 @@
+.feature-tiles {
+  display: flex;
+  margin: 3rem 0;
+  overflow-x: scroll;
+
+  &__item {
+    //display: flex;
+    //flex-direction: column;
+    margin: 0 1rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      padding-right: 1rem;
+      margin-right: 0;
+    }
+  }
+
+  &__image {
+    width: 200px;
+    height: 220px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: @small-size;
+    line-height: 1.6;
+    color: inherit;
+  }
+}

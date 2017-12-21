@@ -35,42 +35,4 @@
       text-align: left;
     }
   }
-
-  .feature-tiles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    margin: 3rem -1rem;
-    padding: 0 1rem;
-    overflow: scroll;
-    scroll-behavior: smooth;
-
-    .feature {
-      //display: flex;
-      //flex-direction: column;
-      margin: 0 1rem;
-
-      &:last-child {
-        margin-right: 0;
-        padding-right: 1rem;
-      }
-      &:first-child {
-        margin-left: 0;
-      }
-
-      .tile {
-        height: 220px;
-        width: 200px;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-
-        img {
-          object-fit: cover;
-          max-height: 100%;
-          max-width: 100%;
-        }
-      }
-    }
-  }
 }

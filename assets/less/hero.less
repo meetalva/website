@@ -1,31 +1,31 @@
 .hero {
-  padding-bottom: 0;
+  padding: 6rem 12.5% 0;
+  background-color: @color-headline;
+  color: @color-copy-invert;
   overflow: hidden;
 
-  .wrapper {
-    max-width: none;
-    width: 75%;
-  }
-
-  p {
-    font-size: 1.2rem;
+  &__copy {
     max-width: 540px;
     margin: 72px 0 24px;
-
-    &.small-copy {
-      font-size: 0.8rem;
-      margin-top: 18px;
-      max-width: 400px;
-      opacity: 0.5;
-    }
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: inherit;
   }
 
-  .button {
+  &__copy--small {
+    font-size: 0.8rem;
+    margin-top: 18px;
+    max-width: 400px;
+    opacity: 0.5;
+  }
+
+  &__button {
     margin-top: 2rem;
   }
 
-  &-github {
+  &__github-link {
     margin-left: 12px;
+
     img {
       width: 25px;
       height: 25px;

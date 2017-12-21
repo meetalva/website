@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Larsseit W01", sans-serif;
+  font-weight: @font-regular;
+  font-size: @base-size;
+  color: @color-copy;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+b {
+  font-weight: @font-medium;
+}
+
+u {
+  border-bottom: 5px solid currentColor;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+  transition: all 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}

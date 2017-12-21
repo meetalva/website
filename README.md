@@ -8,7 +8,7 @@ This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go che
 
 
 ```sh
-$ git clone https://github.com/meetalva/meetalva.github.io.git
+$ git clone https://github.com/meetalva/website.git
 cd meetalva.github.io
 npm install
 ```

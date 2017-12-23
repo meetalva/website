@@ -17,7 +17,7 @@
 		<title>Thanks for subscribing!</title>
 		<style type="text/css">
 			p {
-				margin: 10px 0;
+				margin: 0 0 10px 0;
 				padding: 0;
 			}
 
@@ -54,6 +54,7 @@
 
 			img {
 				-ms-interpolation-mode: bicubic;
+				max-width: 100%;
 			}
 
 			table {
@@ -117,61 +118,50 @@
 				max-width: 600px !important;
 			}
 
-			h1 {
+			h1, h2, h3, p, a, ul, li {
 				/*@editable*/
-				color: #FFFFFF;
+				color: #010C16;
 				/*@editable*/
 				font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/
-				font-size: 36px;
-				/*@editable*/
 				font-style: normal;
+				/*@editable*/
+				text-align: left;
+				/*@editable*/
+				letter-spacing: normal;
+			}
+
+			h1 {
+				/*@editable*/
+				font-size: 36px;
 				/*@editable*/
 				font-weight: bold;
 				/*@editable*/
 				line-height: 125%;
-				/*@editable*/
-				letter-spacing: normal;
-				/*@editable*/
-				text-align: center;
 			}
 
-			p {
+			h2 {
 				/*@editable*/
-				color: #FFFFFF;
+				font-size: 24px;
+				/*@editable*/
+				font-weight: 500;
+				/*@editable*/
+				line-height: 125%;
+			}
 
-				font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			p, a, li {
 				/*@editable*/
 				font-size: 18px;
-				/*@editable*/
-				font-style: normal;
 				/*@editable*/
 				font-weight: normal;
 				/*@editable*/
 				line-height: 140%;
-				/*@editable*/
-				letter-spacing: normal;
-				/*@editable*/
-				text-align: center;
 			}
 
-			a {
-				/*@editable*/
-				color: #FFFFFF;
-				/*@editable*/
-				font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				/*@editable*/
-				font-size: 18px;
-				/*@editable*/
-				font-style: normal;
-				/*@editable*/
-				font-weight: normal;
-				/*@editable*/
-				line-height: 140%;
-				/*@editable*/
-				letter-spacing: normal;
-				/*@editable*/
-				text-align: center;
+			ul {
+				padding-left: 20px;
+				-webkit-padding-start: 20px;
+				margin: 0 0 30px 0;
 			}
 
 			/*
@@ -224,11 +214,11 @@
 			}
 
 			/*
-			@tab Body
-			@section Body Style
+			@tab Header
+			@section Header Style
 			@tip Set the background color and borders for your email's preheader area.
 			*/
-			#templateBody {
+			#templateHeader {
 				/*@editable*/
 				background-color: #0070D6;
 				/*@editable*/
@@ -240,13 +230,68 @@
 			}
 
 			/*
+			@tab Header
+			@section Header Style
+			@tip Set the background color and borders for your email's preheader area.
+			*/
+			#templateHeader h1 {
+				/*@editable*/
+				color: #FFFFFF;
+				/*@editable*/
+				margin-bottom: 30px;
+				text-align: center;
+			}
+
+			/*
+			@tab Header
+			@section Header Style
+			@tip Set the background color and borders for your email's preheader area.
+			*/
+			#templateHeader p {
+				/*@editable*/
+				color: #FFFFFF;
+				/*@editable*/
+				margin-bottom: 30px;
+			}
+
+			/*
+			@tab Header
+			@section Header Style
+			@tip Set the background color and borders for your email's preheader area.
+			*/
+			#templateHeader a {
+				/*@editable*/
+				color: #FFFFFF;
+			}
+
+			/* =======
+			START BODY
+			======= */
+
+			/*
 			@tab Body
 			@section Body Style
 			@tip Set the background color and borders for your email's preheader area.
 			*/
-			#templateBody h1 {
+			#templateBody {
 				/*@editable*/
-				color: #FFFFFF;
+				background-color: #FFFFFF;
+				/*@editable*/
+				color: #010C16;
+				/*@editable*/
+				padding-top: 60px;
+				/*@editable*/
+				padding-bottom: 30px;
+			}
+
+			/*
+			@tab Body
+			@section Body Style
+			@tip Set the background color and borders for your email's preheader area.
+			*/
+			#templateBody h1, h2, h3 {
+				/*@editable*/
+				color: #0070D6;
 				/*@editable*/
 				margin-bottom: 30px;
 			}
@@ -258,7 +303,7 @@
 			*/
 			#templateBody p {
 				/*@editable*/
-				color: #FFFFFF;
+				color: #010C16;
 				/*@editable*/
 				margin-bottom: 30px;
 			}
@@ -270,8 +315,16 @@
 			*/
 			#templateBody a {
 				/*@editable*/
-				color: #FFFFFF;
+				color: #0070D6;
 			}
+
+			#templateBody .article {
+				margin-bottom: 60px;
+			}
+
+			/* =========
+			START FOOTER
+			========= */
 
 			/*
 			@tab Footer
@@ -280,9 +333,9 @@
 			*/
 			#templateFooter {
 				/*@editable*/
-				background-color: #FFFFFF;
+				background-color: #343D45;
 				/*@editable*/
-				color: #676D73;
+				color: #FFFFFF;
 				/*@editable*/
 				padding-top: 20px;
 				/*@editable*/
@@ -296,7 +349,7 @@
 			*/
 			#templateFooter a {
 				/*@editable*/
-				color: #676D73;
+				color: #FFFFFF;
 				/*@editable*/
 				padding-top: 20px;
 				/*@editable*/
@@ -308,10 +361,19 @@
 				text-decoration: none;
 			}
 
+			#templateFooter .footer-link {
+				margin-right: 30px;
+			}
+
 			#templateReward {
 				padding-top: 20px;
 				padding-bottom: 20px;
-				display: none;
+			}
+
+			@media only screen and (max-width: 480px) {
+				.headlineBlock, .contentBlock{
+					padding: 10px !important;
+				}
 			}
 		</style>
 	</head>
@@ -331,7 +393,7 @@
 									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
 										<tr>
 											<td valign="top" class="preheaderContainer">
-												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%">
 													<tbody>
 														<tr>
 															<td align="center" valign="top" class="logoBlock">
@@ -347,17 +409,79 @@
 								</td>
 							</tr>
 							<tr>
+								<td align="center" valign="top" id="templateHeader">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+										<tr>
+											<td valign="top" class="headerContainer">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%">
+													<tbody>
+														<tr>
+															<td valign="top" class="headlineBlock" mc:edit="headline_content">
+																<h1>Issue &#8470; 1</h1>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
 								<td align="center" valign="top" id="templateBody">
 									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
 										<tr>
 											<td valign="top" class="bodyContainer">
-												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="article" mc:repeatable="article" mc:variant="Article">
 													<tbody>
 														<tr>
-															<td valign="top" class="logoBlock">
-																<h1>Great to have you on board!</h1>
-																<p>You have officially subscribed to our Newsletter. <br />Always be the first to be informed about future updates and announcements.</p>
-																<p>In the meantime, hop over to <a href="http://meetalva.io/">meetalva.io</a>, or join us on <a href="https://twitter.com/meetalva/">twitter</a> and spread the word!</p>
+															<td valign="top" class="contentBlock" mc:edit="article_content">
+																<h2>Introducing Alva 0.7.0</h2>
+																<p>A new alpha release is here and it brought some new features as well as some bug fixes and enhancements with it:</p>
+																<ul>
+																	<li>Resize your preview pane exactly to the size you need it</li>
+																	<li>List element 2</li>
+																	<li>List element 3</li>
+																</ul>
+																<p>Take a look at all improvements in the <a href="">release notes</a> and don't forget to update Alva and use the new features.</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="article" mc:repeatable="article" mc:variant="Article with Image">
+													<tbody>
+														<tr>
+															<td valign="top" class="contentImage">
+																<img mc:edit="article_image" src="https://gallery.mailchimp.com/8f07560758ff52583a4f34f45/images/cd11fa98-e640-47b5-bf05-e7cd9e222e13.png" alt="text" />
+															</td>
+														</tr>
+														<tr>
+															<td valign="top" class="contentBlock" mc:edit="article_w_image_content">
+																<h2>Introducing Alva 0.7.0</h2>
+																<p>A new alpha release is here and it brought some new features as well as some bug fixes and enhancements with it:</p>
+																<ul>
+																	<li>Resize your preview pane exactly to the size you need it</li>
+																	<li>List element 2</li>
+																	<li>List element 3</li>
+																</ul>
+																<p>Take a look at all improvements in the <a href="">release notes</a> and don't forget to update Alva and use the new features.</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="article" mc:repeatable="article" mc:variant="Article two columns">
+													<tbody>
+														<tr>
+															<td align="left" valign="top" width="50%" class="contentBlock" mc:edit="article_col_2_content_left">
+																<p>A new alpha release is here and it brought some new features as well as some bug fixes and enhancements with it:</p>
+																<p>Take a look at all improvements in the <a href="">release notes</a> and don't forget to update Alva and use the new features.</p>
+															</td>
+															<td align="right" valign="top" width="50%" class="contentBlock" mc:edit="article_col_2_content_right">
+																<ul>
+																	<li>Resize your preview pane exactly to the size you need it</li>
+																	<li>List element 2</li>
+																	<li>List element 3</li>
+																</ul>
 															</td>
 														</tr>
 													</tbody>
@@ -372,38 +496,15 @@
 									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
 										<tr>
 											<td valign="top" class="footerContainer">
-												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%">
 													<tbody>
 														<tr>
-															<td align="center" valign="top" class="logoBlock">
-																<a href="http://meetalva.io/">meetalva.io</a>
+															<td align="left" valign="middle" class="logoBlock">
+																<a class="footer-link" href="http://meetalva.io/">meetalva.io</a>
+																<a class="footer-link" href="https://github.com/meetalva/alva">github.io</a>
+																<a class="footer-link" href="*|UNSUB|*">unsubscribe</a>
 															</td>
-															<td align="center" valign="top" class="logoBlock">
-																<a href="https://github.com/meetalva/alva">github.io</a>
-															</td>
-															<td align="center" valign="top" class="logoBlock">
-																<a href="*|UNSUB|*">unsubscribe</a>
-															</td>
-															<td align="center" valign="top" class="logoBlock">
-																<a href="">privacy policy</a>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td align="center" valign="top" id="templateReward">
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-										<tr>
-											<td valign="top" class="rewardContainer">
-												<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-													<tbody>
-														<tr>
-															<td align="center" valign="top" class="rewardBlock">
+															<td align="right" valign="top" class="rewardBlock">
 																*|REWARDS|*
 															</td>
 														</tr>

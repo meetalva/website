@@ -37,9 +37,15 @@ html, body {
     font-family: 'Larsseit W01', sans-serif;
     font-weight: 400;
     font-size: @base-size;
+    background-color: @color-headline;
     color: @color-copy;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height: auto;
+    background-color: white;
 }
 
 h1 {
@@ -187,18 +193,10 @@ input[type=email] {
     }
 }
 
-.dark {
-	background-color: @color-headline;
-	color: @color-copy-invert;
-
-	h1,h2,h3,h4 {
-		color: @color-copy-invert;
-	}
-}
-
 .section {
     text-align: center;
     padding: 6rem 0 10rem;
+    background-color: white;
 	
 	@media @mobile {
 		padding: 3rem 0 3rem;
@@ -251,6 +249,14 @@ input[type=email] {
 	}
 }
 
+.dark {
+    background-color: @color-headline;
+    color: @color-copy-invert;
+
+    h1,h2,h3,h4 {
+        color: @color-copy-invert;
+    }
+}
 
 .hero {
     padding-bottom: 0;
@@ -353,9 +359,10 @@ input[type=email] {
 		width: 90%;
 		max-width: 1440px;
 		margin: 0 auto;
+		position: relative;
 	}
 
-	&:after {
+	&::before {
 		content: '';
 		position: absolute;
 		display: block;
@@ -364,7 +371,6 @@ input[type=email] {
 		top: 0;
 		left: 0;
 		background-color: @color-headline;
-		z-index: -1;
 		margin-top: -1px;
 	}
 }

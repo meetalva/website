@@ -5,18 +5,24 @@
   "main": "index.js",
   "devDependencies": {
     "concurrently": "^3.5.1",
-    "http-server": "^0.10.0",
+    "execa": "^0.8.0",
     "less": "^2.7.3",
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-clean-css": "^1.5.1",
-    "nodemon": "^1.12.1"
+    "meow": "^4.0.0",
+    "nodemon": "^1.12.1",
+    "now": "^8.5.4",
+    "serve": "^6.4.3"
   },
   "scripts": {
-    "watch:node-less": "nodemon -e less -x \"npm run node-less\"",
-    "node-less": "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' assets/css/style.less > assets/css/style.css",
-    "watch": "npm run watch:node-less",
-    "serve": "http-server .",
-    "start": "concurrently \"npm run watch\" \"npm run serve\""
+    "build": "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' src/style.less > lib/css/style.css",
+    "deploy": "netlify deploy",
+    "start": "concurrently \"npm run watch\" \"serve lib\"",
+    "watch": "nodemon -e less -x \"npm run build\""
+  },
+  "now": {
+    "name": "meetalva",
+    "alias": "meetalva.io"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 {
-  "name": "stacked-website",
+  "name": "alva-website",
   "version": "1.0.0",
-  "description": "The website for Stacked",
+  "description": "The website for Alva",
   "main": "index.js",
   "devDependencies": {
     "concurrently": "^3.5.1",
@@ -16,22 +16,17 @@
   },
   "scripts": {
     "build": "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' src/style.less > lib/css/style.css",
-    "deploy": "netlify deploy",
     "start": "concurrently \"npm run watch\" \"serve lib\"",
     "watch": "nodemon -e less -x \"npm run build\""
   },
-  "now": {
-    "name": "meetalva",
-    "alias": "meetalva.io"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stackedapp/stacked-website.git"
+    "url": "git+https://github.com/meetalva/website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stackedapp/stacked-website/issues"
+    "url": "https://github.com/meetalva/website/issues"
   },
-  "homepage": "https://github.com/stackedapp/stacked-website#readme"
+  "homepage": "https://github.com/meetalva/website#readme"
 }

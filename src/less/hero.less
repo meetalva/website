@@ -1,5 +1,5 @@
 .hero {
-  padding: 6rem 12.5% 0;
+  padding: 3rem 12.5% 0;
   background-color: @color-headline;
   color: @color-copy-invert;
   overflow: hidden;
@@ -8,19 +8,34 @@
     max-width: 540px;
     margin: 72px 0 24px;
     font-size: 1.2rem;
-    line-height: 1.6;
-    color: inherit;
   }
 
   &__copy--small {
-    font-size: 0.8rem;
-    margin-top: 18px;
+    margin: 18px 0 24px;
     max-width: 400px;
+    font-size: 0.8rem;
     opacity: 0.5;
   }
 
   &__button {
     margin-top: 2rem;
+  }
+
+  &__link {
+    margin-right: 12px;
+    opacity: 0.5;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    img {
+      margin-right: 6px;
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
   }
 
   &__github-link {

@@ -13,7 +13,7 @@
   "scripts": {
     "watch:node-less": "nodemon -e less -x \"npm run node-less\"",
     "node-less":
-      "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' assets/less/style.less > assets/css/style.css",
+      "lessc --strict-math=on --clean-css='advanced' --autoprefix='last 2 versions, not ie < 11, last 2 ChromeAndroid versions, last 2 Android versions, last 1 ExplorerMobile versions' src/less/style.less > lib/css/style.css",
     "watch": "npm run watch:node-less"
   },
   "repository": {

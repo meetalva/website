@@ -16,49 +16,56 @@
 	<title>Meet Alva</title>
 	<meta property="og:type" content="website">
 	<meta property="og:description" content="A radically new design tool built for cross-functional product teams.">
-	<meta property="og:image" content="https://meetalva.io/assets/images/alva-og_img.png">
+	<meta property="og:image" content="https://meetalva.io/images/alva-og_img.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@meetalva">
 	<meta name="twitter:title" content="Meet Alva">
 	<meta name="twitter:description" content="A radically new design tool built for cross-functional product teams.">
-	<meta name="twitter:image" content="https://meetalva.io/assets/images/alva-og_img.png">
+	<meta name="twitter:image" content="https://meetalva.io/images/alva-og_img.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e7aa785c-62d1-4596-b02e-197d04a1d663.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
 	<section class="hero">
+		<div class="hero__links">
+			<a href="https://github.com/meetalva/alva" target="_blank" class="hero__link" title="Alva on Github">
+				<img src="images/github.svg" role="presentation"> Alva on Github
+			</a>
+			<a href="https://twitter.com/meetalva" target="_blank" class="hero__link" title="Alva on Github">@meetalva on Twitter</a>
+		</div>
 		<h1 class="h1 h1--invert">
 			<b>Meet Alva,</b>
 			<br> a radically new
 			<u>digital design tool</u> built for cross-functional product teams.</h1>
-		<p class="hero__copy">Alva lets you design interactive products based on the same components your engineers are using for production websites.
+		<p class="hero__copy copy">Alva lets you design interactive products based on the same components your engineers are using for production websites.
 			But, our mission goes way further. And guess what – we are entirely
 			<a href="https://github.com/meetalva" target="_blank">open source</a>.</p>
-		<a id="download-btn" class="button hero__button js-download-button" href="https://github.com/meetalva/alva/releases/latest">Download Alva</a>
+		<a id="download-btn" class="hero__button button js-download-button" href="https://github.com/meetalva/alva/releases/latest">Download Alva</a>
 		<a href="https://github.com/meetalva" target="_blank" class="hero__github-link">
-			<img src="assets/images/github.svg">
+			<img src="images/github.svg">
 		</a>
-		<p class="hero__copy--small">This is an early alpha version. Feel free to try out, but we are still working hard on better support for external component
+		<p class="hero__copy--smal
+		l copy copy--small">This is an early alpha version. Feel free to try out, but we are still working hard on better support for external component
 			libraries.
 		</p>
 	</section>
 
-	<section class="application">
-		<img class="application__image" src="assets/images/application.png">
+	<section class="image section">
+		<img class="image__item" src="images/application.png">
 	</section>
 
-	<section class="newsletter">
+	<section class="newsletter section">
 		<h2 class="h2">Stay tuned</h2>
-		<p class="copy newsletter__copy">Alva is a work-in-progress, and constantly evolving. Sign up with your email to be the first in line when we announce new
+		<p class="newsletter__copy copy">Alva is a work-in-progress, and constantly evolving. Sign up with your email to be the first in line when we announce new
 			features. </p>
 		<!-- Begin MailChimp Signup Form -->
 		<div id="mc_embed_signup">
 			<form action="https://alva.us17.list-manage.com/subscribe/post?u=8f07560758ff52583a4f34f45&amp;id=d598cf405b" method="post"
 			 id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
 				<div id="mc_embed_signup_scroll">
-					<input class="input--email email" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required>
+					<input class="form__input email" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required>
 					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					<div style="position: absolute; left: -5000px;" aria-hidden="true">
 						<input type="text" name="b_8f07560758ff52583a4f34f45_d598cf405b" tabindex="-1" value="">
@@ -77,28 +84,22 @@
 				images. Based on that, an engineer can start writing the component as real code and replace all the placeholder components.</p>
 
 			<!--<p class="copy">You can start with a minimal set of components to sketch concepts like wireframes and do fast iterations with your development team to create and enrich components, from atoms to modules and entire pages with production-ready code.</p>!-->
-			<div class="feature-tiles">
-				<div class="feature-tiles__item">
-					<!-- <div class="feature-tiles__image"> -->
-					<img class="feature-tiles__image" src="./assets/images/wireframe.png" />
-					<!-- </div> -->
-					<div class="feature-tiles__title">
+			<div class="slider">
+				<div class="slider__item">
+					<img class="slider__image" src="./images/wireframe.png" />
+					<div class="slider__title">
 						Wireframe
 					</div>
 				</div>
-				<div class="feature-tiles__item">
-					<!-- <div class="feature-tiles__image"> -->
-					<img class="feature-tiles__image" src="./assets/images/design.png" />
-					<!-- </div> -->
-					<div class="feature-tiles__title">
+				<div class="slider__item">
+					<img class="slider__image" src="./images/design.png" />
+					<div class="slider__title">
 						Design
 					</div>
 				</div>
-				<div class="feature-tiles__item">
-					<!-- <div class="feature-tiles__image"> -->
-					<img class="feature-tiles__image" src="./assets/images/code.png" />
-					<!-- </div> -->
-					<div class="feature-tiles__titlel">
+				<div class="slider__item">
+					<img class="slider__image" src="./images/code.png" />
+					<div class="slider__titlel">
 						Design &amp; Code
 					</div>
 				</div>
@@ -106,13 +107,14 @@
 		</div>
 	</section>
 
-	<section class="section source">
+	<section class="section section--grey">
 		<div class="section__wrapper">
 			<h2 class="h2">Cross-functional single source of truth</h2>
 			<p class="copy">Instead of creating a separate static component library for Sketch, Photoshop and all the other tools, you can start building
 				your layouts and design with the very same components that your engineers use for the production website.</p>
 
-			<img src="assets/images/components.png" class="source-image">
+			<img src="images/components.png" class="section__image">
+
 
 			<p class="copy">Basically, you share the component library with your engineers so that everyone has the latest version everywhere, everytime.
 			</p>
@@ -121,44 +123,44 @@
 		</div>
 	</section>
 
-	<section class="section features section--invert">
+	<section class="section section--blue">
 		<div class="section__wrapper">
 			<h2 class="h2 h2--invert">Bringing web technology into web design</h2>
 			<p class="copy">A website is more than a plain fixed-size drawing canvas, where you can position rectangles, circles and text whereever
 				you want to. Responsive design doesn’t mean to have just three different viewports designed. And interaction is not only
 				connecting to static screens with a transition. It can be way more.</p>
 
-			<div class="features-application">
-				<div class="features-application-item">
-					<h4 class="h4 h4--invert">Page elements</h4>
-					<p class="copy">On the left side you all the components you are using on your page. You can rearrange them or nest them.</p>
+			<div class="offset-image">
+				<div class="offset-image__item">
+					<h4 class="h4 h4--invert offset-image__headline">Page elements</h4>
+					<p class="copy offset-image__copy">On the left side you all the components you are using on your page. You can rearrange them or nest them.</p>
 				</div>
 
-				<div class="features-application-item">
-					<h4 class="h4 h4--invert">Responsive</h4>
-					<p class="copy">Every viewport counts. You can easily adjust the preview viewport to test your design on every possible size.</p>
+				<div class="offset-image__item">
+					<h4 class="h4 h4--invert offset-image__headline">Responsive</h4>
+					<p class="copy offset-image__copy">Every viewport counts. You can easily adjust the preview viewport to test your design on every possible size.</p>
 				</div>
 
-				<div class="features-application-item">
-					<h4 class="h4 h4--invert">Interactive</h4>
-					<p class="copy">The web is interactive, so we should design interactively, too. Alva enables you to go beyond static screens.</p>
+				<div class="offset-image__item">
+					<h4 class="h4 h4--invert offset-image__headline">Interactive</h4>
+					<p class="copy offset-image__copy">The web is interactive, so we should design interactively, too. Alva enables you to go beyond static screens.</p>
 					<div class="badge">Coming soon</div>
 				</div>
 
-				<img src="assets/images/application.png" class="features-application-image">
+				<img src="images/application.png" class="offset-image__image">
 			</div>
 
-			<div class="features-additional">
-				<img src="assets/images/icon-customcode.png" aria-hidden="true">
-				<h3 class="h3 h3--invert">Custom code integration</h3>
+			<div class="teaser">
+				<img class="teaser__image" src="images/icon-customcode.png" aria-hidden="true">
+				<h3 class="h3 h3--invert teaser__headline">Custom code integration</h3>
 				<p class="copy">If you’d like to implement custom logic or anything else code-based, you can insert custom code anywhere. So Designers
 					don’t have to code. But they are able to.</p>
 				<div class="badge">Coming soon</div>
 			</div>
 
-			<div class="features-additional">
-				<img src="assets/images/icon-livedata.png" aria-hidden="true">
-				<h3 class="h3 h3--invert">Prototype design with live data</h3>
+			<div class="teaser teaser--right">
+				<img class="teaser__image" src="images/icon-livedata.png" aria-hidden="true">
+				<h3 class="h3 h3--invert teaser__headline">Prototype design with live data</h3>
 				<p class="copy">You want to translate your designs into a dozen of languages? Or want to connect to real data? Don’t worry, Alva supports
 					that.
 				</p>
@@ -167,14 +169,14 @@
 		</div>
 	</section>
 
-	<section class="section contribute">
+	<section class="section">
 		<div class="section__wrapper">
 			<h2 class="h2">Be part of shaping the future of design</h2>
 			<p class="copy">Help us taking Alva to the next level with your design expertise, product management insights or engineering skills. Our
 				next features, bugs and the roadmap are fully open. Feel free to add issues, start pull requests or let us discuss what
 				should be next.</p>
 
-			<a class="button" href="https://github.com/meetalva/alva/projects/3" target="_blank">Explore our next steps on Github</a>
+			<a class="button button--blue" href="https://github.com/meetalva/alva/projects/3" target="_blank">Explore our next steps on Github</a>
 
 			<p class="copy-small">
 				<a href=""></a>
@@ -183,7 +185,7 @@
 		</div>
 	</section>
 
-	<section class="section about">
+	<section class="section section--grey">
 		<div class="section__wrapper">
 			<h2 class="h2">The story behind Alva</h2>
 			<p class="copy">»Alva« is the middle name of Thomas Alva Edison, who made electricity available to the public. And in Latin, »Alva« means
@@ -192,58 +194,60 @@
 				on building and evolving the Alva app and its ecosystem. </p>
 
 			<h3 class="h3">Our core team</h3>
-			<div class="about-people">
-				<a class="about-people-item" href="https://github.com/Alexpeschel" target="_blank">
-					<h4 class="h4">Alexander Peschel</h4>
-					<p class="copy">Product Engineering</p>
+			<div class="tiles">
+				<a class="tiles__item" href="https://github.com/Alexpeschel" target="_blank">
+					<h4 class="h4 tiles__headline">Alexander Peschel</h4>
+					<p class="copy tiles__copy">Product Engineering</p>
 				</a>
 
-				<a class="about-people-item" href="https://github.com/faselbaum" target="_blank">
-					<h4 class="h4">Julius Walther</h4>
-					<p class="copy">Product Engineering</p>
+				<a class="tiles__item" href="https://github.com/faselbaum" target="_blank">
+					<h4 class="h4 tiles__headline">Julius Walther</h4>
+					<p class="copy tiles__copy">Product Engineering</p>
 				</a>
 
-				<a class="about-people-item" href="https://github.com/LKuechler" target="_blank">
-					<h4 class="h4">Lasse Küchler</h4>
-					<p class="copy">Product Engineering</p>
+				<a class="tiles__item" href="https://github.com/LKuechler" target="_blank">
+					<h4 class="h4 tiles__headline">Lasse Küchler</h4>
+					<p class="copy tiles__copy">Product Engineering</p>
 				</a>
 
-				<a class="about-people-item" href="https://github.com/markusoelhafen" target="_blank">
-					<h4 class="h4">Markus Ölhafen</h4>
-					<p class="copy">Product Design</p>
+				<a class="tiles__item" href="https://github.com/markusoelhafen" target="_blank">
+					<h4 class="h4 tiles__headline">Markus Ölhafen</h4>
+					<p class="copy tiles__copy">Product Design</p>
 				</a>
 
-				<a class="about-people-item" href="https://github.com/TheReincarnator" target="_blank">
-					<h4 class="h4">Thomas Jacob</h4>
-					<p class="copy">Product Engineering</p>
+				<a class="tiles__item" href="https://github.com/TheReincarnator" target="_blank">
+					<h4 class="h4 tiles__headline">Thomas Jacob</h4>
+					<p class="copy tiles__copy">Product Engineering</p>
 				</a>
 
-				<a class="about-people-item" href="https://github.com/tilmx" target="_blank">
-					<h4 class="h4">Tilman Frick</h4>
-					<p class="copy">Product Lead</p>
+				<a class="tiles__item" href="https://github.com/tilmx" target="_blank">
+					<h4 class="h4 tiles__headline">Tilman Frick</h4>
+					<p class="copy tiles__copy">Product Lead</p>
 				</a>
 			</div>
 
 			<p class="copy">
-				<br>Special thanks to Holger Blank, Yuri Ziebell, Philipp von Essen, Stefan Förster, Felicitas Kugland and Mario Nebl. And
-				we are proud of so many more
+				Special thanks to Holger Blank, Yuri Ziebell, Philipp von Essen, Stefan Förster, Felicitas Kugland and Mario Nebl. And we
+				are proud of so many more
+				<br>
 				<a href="https://github.com/meetalva/alva/graphs/contributors" target="_blank">contributors on Github</a>!</p>
 		</div>
 
-		<div class="social">
-			<a class="social-item twitter" href="https://twitter.com/home?status=%40meetalva,%20a%20radically%20new%20digital%20design%20tool%20built%20for%20cross-functional%20product%20teams.%20https%3A//meetalva.io/"
+		<!-- TODO: add icons inline -->
+		<div>
+			<a class="button button--bordered-blue icon icon--twitter" href="https://twitter.com/home?status=%40meetalva,%20a%20radically%20new%20digital%20design%20tool%20built%20for%20cross-functional%20product%20teams.%20https%3A//meetalva.io/"
 			 target="_blank">Tweet about Alva</a>
-			<a class="social-item facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//meetalva.io/" target="_blank">Share on Facebook</a>
+			<a class="button button--bordered-blue icon icon--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//meetalva.io/"
+			 target="_blank">Share on Facebook</a>
 		</div>
 	</section>
 
-	<section class="section footer">
-		Proudly powered by SinnerSchrader
-		<br>
+	<section class="footer">
+		<div>Proudly powered by SinnerSchrader</div>
 		<a href="https://sinnerschrader.com/imprint/" target="_blank">Site’s notice</a>
 	</section>
 
-	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

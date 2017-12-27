@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: inherit;
+  line-height: inherit;
+  color: @color-headline;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--invert {
+    background-color: @color-primary;
+    color: #fff;
+  }
+
+  &--blue {
+    margin-top: 42px;
+    background: #0070d6;
+    color: #fff;
+  }
+
+  &--bordered-blue {
+    padding: 12px;
+    border: 1px solid currentColor;
+    margin: 0 18px;
+    background: transparent;
+    color: #0070d6;
+    border-radius: 5px;
+  }
+
+  &--submit {
+    padding: 13px 24px;
+    border: 0;
+    margin-left: -6px;
+    border-radius: 0 3px 3px 0;
+  }
+}

@@ -1,0 +1,49 @@
+h1 {
+  font-size: 7rem;
+  color: @color-headline;
+  .font-medium;
+
+  @media @tablet {
+    font-size: 4rem;
+  }
+
+  @media @mobile {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  color: @color-headline;
+  .font-medium;
+  line-height: 1.3;
+  margin: 2rem 0;
+
+  @media @mobile {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: @color-headline;
+  .font-medium;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: @color-headline;
+  .font-medium;
+  margin: 0;
+}
+
+.invert {
+  color: @color-copy-invert;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: @color-copy-invert;
+  }
+}

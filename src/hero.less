@@ -1,0 +1,80 @@
+.hero {
+  padding-bottom: 0;
+  overflow: hidden;
+  padding-top: 3rem;
+
+  .wrapper {
+    max-width: none;
+    width: 75%;
+
+    @media @mobile {
+      width: 90%;
+    }
+  }
+
+  .hero-links {
+    a {
+      margin-right: 12px;
+      text-decoration: none;
+      opacity: 0.5;
+      margin-left: 0;
+
+      img {
+        margin-right: 6px;
+      }
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  h1 {
+    .font-light;
+    margin: 15vh 0 0 0;
+    padding-top: 0rem;
+
+    strong {
+      .font-medium;
+    }
+
+    u {
+      border-bottom: 5px solid currentColor;
+      text-decoration: none;
+
+      @media @tablet {
+        border-width: 3px;
+      }
+
+      @media @mobile {
+        border-width: 2px;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 540px;
+    margin: 72px 0 24px;
+
+    &.small-copy {
+      font-size: 0.8rem;
+      margin-top: 18px;
+      max-width: 400px;
+      opacity: 0.5;
+    }
+  }
+
+  .button {
+    margin-top: 2rem;
+  }
+
+  &-github {
+    margin-left: 12px;
+    img {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
+  }
+}

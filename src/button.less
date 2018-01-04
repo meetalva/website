@@ -1,21 +1,59 @@
 .button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: white;
-  color: @color-headline;
   border-radius: 3px;
+  background-color: white;
   font-size: inherit;
   line-height: inherit;
-  transition: opacity 0.2s;
+  color: @color-headline;
   text-decoration: none;
   -webkit-appearance: none;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.9;
   }
 
-  &.inverted {
+  &--blue {
     background-color: @color-primary;
     color: white;
+  }
+
+  &--bordered-blue {
+    padding: 12px;
+    border: 1px solid #0070d6;
+    border-radius: 5px;
+    background: transparent;
+    color: #0070d6;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &--submit {
+    box-sizing: border-box;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media (min-width: 422px) {
+      border-radius: 0 3px 3px 0;
+    }
+  }
+
+  &-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      margin: 0 18px;
+    }
   }
 }

@@ -1,38 +1,41 @@
 .hero {
-  padding-bottom: 0;
-  overflow: hidden;
   padding-top: 3rem;
+  background-color: @color-headline;
+  color: @color-copy-invert;
+  overflow: hidden;
 
-  .wrapper {
-    max-width: none;
+  &__container {
     width: 75%;
+    padding: 0 1rem;
+    margin: auto;
 
     @media @mobile {
       width: 90%;
     }
   }
 
-  .hero-links {
-    a {
-      margin-right: 12px;
-      text-decoration: none;
-      opacity: 0.5;
-      margin-left: 0;
+  &__link {
+    margin-right: 12px;
+    margin-left: 0;
+    text-decoration: none;
+    opacity: 0.5;
 
-      img {
-        margin-right: 6px;
-      }
+    img {
+      width: 25px;
+      height: 25px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
 
-      &:hover {
-        opacity: 0.75;
-      }
+    &:hover {
+      opacity: 0.75;
     }
   }
 
-  h1 {
+  &__headline {
     font-weight: @font-light;
     margin: 15vh 0 0 0;
-    padding-top: 0rem;
+    color: @color-copy-invert;
 
     strong {
       font-weight: @font-medium;
@@ -52,12 +55,12 @@
     }
   }
 
-  p {
+  &__copy {
     font-size: 1.2rem;
     max-width: 540px;
     margin: 72px 0 24px;
 
-    &.small-copy {
+    &--small {
       font-size: 0.8rem;
       margin-top: 18px;
       max-width: 400px;
@@ -65,11 +68,11 @@
     }
   }
 
-  .button {
+  &__button {
     margin-top: 2rem;
   }
 
-  &-github {
+  &__github-link {
     margin-left: 12px;
     img {
       width: 25px;

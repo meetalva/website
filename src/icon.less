@@ -1,0 +1,18 @@
+.icon {
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin: 0 8px -2px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+  }
+  &--facebook::before {
+    background-image: url(../images/social-facebook.svg);
+  }
+  &--twitter::before {
+    background-image: url(../images/social-twitter.svg);
+  }
+}

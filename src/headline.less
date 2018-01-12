@@ -1,0 +1,47 @@
+.h1 {
+  font-size: 7rem;
+
+  @media @tablet {
+    font-size: 4rem;
+  }
+
+  @media @mobile {
+    font-size: 3rem;
+  }
+}
+
+.h2 {
+  padding: 2rem 0;
+  font-size: 4rem;
+  line-height: 1.3;
+
+  @media @mobile {
+    font-size: 2.5rem;
+  }
+}
+
+.h3 {
+  padding: 1.75rem 0;
+  font-size: 1.75rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  margin: 0;
+  font-weight: @font-medium;
+  color: @color-headline;
+
+  &--invert {
+    color: @color-copy-invert;
+  }
+
+  &--limited {
+    max-width: 540px;
+  }
+}

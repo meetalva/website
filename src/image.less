@@ -1,0 +1,27 @@
+.image {
+  position: relative;
+  padding: 14rem 0 4rem;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    @color-headline 0%,
+    @color-headline 50%,
+    #fff 50%,
+    #fff 100%
+  );
+
+  @media @mobile {
+    padding-top: 4rem;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+}

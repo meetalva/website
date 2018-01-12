@@ -1,0 +1,83 @@
+.hero {
+  padding-top: 3rem;
+  background-color: @color-headline;
+  color: @color-copy-invert;
+  overflow: hidden;
+
+  &__container {
+    width: 75%;
+    padding: 0 1rem;
+    margin: auto;
+
+    @media @mobile {
+      width: 90%;
+    }
+  }
+
+  &__link {
+    margin-right: 12px;
+    margin-left: 0;
+    text-decoration: none;
+    opacity: 0.5;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__headline {
+    font-weight: @font-light;
+    margin: 15vh 0 0 0;
+    color: @color-copy-invert;
+
+    strong {
+      font-weight: @font-medium;
+    }
+
+    u {
+      border-bottom: 5px solid currentColor;
+      text-decoration: none;
+
+      @media @tablet {
+        border-width: 3px;
+      }
+
+      @media @mobile {
+        border-width: 2px;
+      }
+    }
+  }
+
+  &__copy {
+    font-size: 1.2rem;
+    max-width: 540px;
+    margin: 72px 0 24px;
+
+    &--small {
+      font-size: 0.8rem;
+      margin-top: 18px;
+      max-width: 400px;
+      opacity: 0.5;
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+  }
+
+  &__github-link {
+    margin-left: 12px;
+    img {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
+  }
+}

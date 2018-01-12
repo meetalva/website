@@ -1,0 +1,34 @@
+.form {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  &__input {
+    box-sizing: border-box;
+    display: block;
+    max-width: 420px;
+    min-width: 300px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid @color-primary;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: inherit;
+    color: @color-copy-grey;
+    outline: 0;
+    -webkit-appearance: none;
+
+    @media (min-width: 422px) {
+      display: inline-block;
+      border-radius: 3px 0 0 3px;
+    }
+  }
+
+  &__submit {
+    margin-top: 15px;
+
+    @media (min-width: 422px) {
+      margin-top: 0;
+      margin-left: -6px;
+    }
+  }
+}

@@ -52,7 +52,7 @@ h1 {
     font-size: 7rem;
     color: @color-headline;
     .font-medium;
-	
+
 	@media @tablet {
 		font-size: 4rem;
 	}
@@ -197,7 +197,7 @@ input[type=email] {
     text-align: center;
     padding: 6rem 0 10rem;
     background-color: white;
-	
+
 	@media @mobile {
 		padding: 3rem 0 3rem;
 	}
@@ -266,24 +266,24 @@ input[type=email] {
 	.wrapper {
 		max-width: none;
 		width: 75%;
-		
-		
+
+
 		@media @mobile {
 			width: 90%;
 		}
 	}
-	
+
 	.hero-links {
 		a {
 			margin-right: 12px;
 			text-decoration: none;
 			opacity: 0.5;
 			margin-left: 0;
-			
+
 			img {
 				margin-right: 6px;
 			}
-			
+
 			&:hover {
 				opacity: 0.75;
 			}
@@ -302,11 +302,11 @@ input[type=email] {
 		u {
 			border-bottom: 5px solid currentColor;
 			text-decoration: none;
-			
+
 			@media @tablet {
 				border-width: 3px;
 			}
-			
+
 			@media @mobile {
 				border-width: 2px;
 			}
@@ -343,7 +343,7 @@ input[type=email] {
 .application {
 	position: relative;
 	padding: 14rem 0 4rem;
-	
+
 	@media @mobile {
 		padding-top: 4rem;
 	}
@@ -375,7 +375,7 @@ input[type=email] {
 .mail {
 	padding-top: 0;
 	padding-bottom: 8rem;
-	
+
 	@media @mobile {
 		padding-bottom: 4rem;
 	}
@@ -406,7 +406,7 @@ input[type=email] {
 		display: inline-block;
 		font-size: 1rem;
 		text-decoration: none;
-		
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -632,5 +632,30 @@ input[type=email] {
 
 	&.left {
 			text-align: left;
+	}
+}
+
+.header {
+	overflow: hidden;
+	padding: 3rem 0;
+
+	.header-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		a {
+			margin-right: 12px;
+			text-decoration: none;
+			opacity: 0.5;
+			margin-left: 0;
+
+			img {
+				margin-right: 6px;
+			}
+
+			&:hover {
+				opacity: 0.75;
+			}
+		}
 	}
 }

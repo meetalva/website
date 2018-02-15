@@ -542,24 +542,3 @@ input[type=email] ~ .button:hover {
 .wrapper.left {
   text-align: left;
 }
-.header {
-  overflow: hidden;
-  padding: 3rem 0;
-}
-.header .header-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header .header-links a {
-  margin-right: 12px;
-  text-decoration: none;
-  opacity: 0.5;
-  margin-left: 0;
-}
-.header .header-links a img {
-  margin-right: 6px;
-}
-.header .header-links a:hover {
-  opacity: 0.75;
-}

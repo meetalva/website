@@ -14,7 +14,6 @@
 	<meta name="language" content="en" />
 	<meta name="description" content="Alva is a radically new open source design tool built for cross-functional product teams. You can design with the same components your engineers are using for production." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e7aa785c-62d1-4596-b02e-197d04a1d663.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="icon" href="images/icon48.png" sizes="48x48" />
 	<link rel="icon" href="images/icon96.png" sizes="96x96" />
@@ -232,78 +231,6 @@
 	</section>
 
 	<script type="text/javascript" src="js/script.js"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111449801-1"></script>
-
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-	<script>
-		window.addEventListener("load", function(){
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-						"background": "#000"
-					},
-					"button": {
-						"background": "#ffffff"
-					}
-				},
-				"theme": "classic",
-				"type": "opt-in",
-				"content": {
-					"message": "This website uses cookies to ensure you get the best experience on our website.",
-					"dismiss": "Dismiss Cookies",
-					"allow": "Allow Cookies",
-					"link": "Learn more",
-					"href": "/privacypolicy.html"
-				},
-				onInitialise: function (status) {
-					var type = this.options.type;
-					var didConsent = this.hasConsented();
-					if (type == 'opt-in' && didConsent) {
-						// enable cookies
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-						gtag('config', 'UA-111449801-1', { 'anonymize_ip': true });
-					}
-				},
-						
-				onStatusChange: function(status, chosenBefore) {
-					var type = this.options.type;
-					var didConsent = this.hasConsented();
-					if (type == 'opt-in' && didConsent) {
-						// enable cookies
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-						gtag('config', 'UA-111449801-1', { 'anonymize_ip': true });
-					}
-				},
-							
-				onRevokeChoice: function() {
-					var type = this.options.type;
-					if (type == 'opt-in') {
-						// disable cookies
-						clearCookie('_ga','.meetalva.io','/');
-						clearCookie('_gat_gtag_UA-111449801-1','.meetalva.io','/');
-						clearCookie('_gid','.meetalva.io','/');
-						// Get an array of cookies
-						var arrSplit = document.cookie.split(";");
-						for(var i = 0; i < arrSplit.length; i++)
-						{
-							var cookie = arrSplit[i].trim();
-							var cookieName = cookie.split("=")[0];
-							// If the prefix of the cookie's name matches the one specified, remove it
-							if(cookieName.indexOf("ssupp.") === 0) {
-								// Remove the cookie
-								document.cookie = cookieName + "=; Max-Age=-99999999;";
-							}
-						}
-					}
-				},
-			})
-		});
-	</script>
 </body>
 
 </html>

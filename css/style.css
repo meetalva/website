@@ -36,6 +36,15 @@ h1 {
 	font-weight: 500;
 }
 
+.legal h1  {
+	font-size: 4rem;
+	font-weight: 500;
+}
+.legal h2  {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
 @media only screen and (max-width: 959px) {
 	h1 {
 		font-size: 4rem;

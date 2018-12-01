@@ -82,19 +82,19 @@ window["patternplate-demo"] =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./node_modules/@patternplate/demo-client/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./node_modules/@patternplate/cli/node_modules/@patternplate/demo-client/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@patternplate/demo-client/index.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@patternplate/demo-client/index.js ***!
-  \*********************************************************/
+/***/ "./node_modules/@patternplate/cli/node_modules/@patternplate/demo-client/index.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@patternplate/cli/node_modules/@patternplate/demo-client/index.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* eslint-env browser */\n/* eslint-disable no-var */\n__webpack_require__(/*! iframe-resizer */ \"./node_modules/iframe-resizer/index.js\");\n\nfunction main() {\n  var components = window['patternplate-components'];\n  var errors = [];\n  if (!components) {\n    errors.push(new Error('No patternplate components found. There might be errors during bundling.'))\n  }\n  if (errors.length > 0) {\n    errors.forEach(function (err) {\n      console.error(err)\n    });\n\n    return;\n  }\n\n  var component = getComponent(components, getData());\n  component.element = component.element || document.querySelector('[data-patternplate-mount]');\n  var mount = typeof component.mount === \"function\" ? component.mount : window[\"patternplate-mount\"]\n\n  mount(component);\n}\n\nmain();\n\nfunction getData() {\n  var vault = document.querySelector('[data-patternplate-vault]');\n  if (!vault) {\n    return {};\n  }\n  var encodedJson = vault.textContent;\n  if (!encodedJson) {\n    return {};\n  }\n  var json = decodeURIComponent(encodedJson);\n  if (!json) {\n    return {};\n  }\n  return JSON.parse(json);\n}\n\nfunction getComponent(components, data) {\n  const fileId = data.artifact.split('\\\\').join('/');\n  const top = components[fileId];\n\n  const moduleId = data.source.split('\\\\').join('/');\n  if (top[moduleId]) {\n    return top[moduleId];\n  }\n\n  return top;\n}\n\n\n//# sourceURL=webpack://patternplate-%5Bname%5D/./node_modules/@patternplate/demo-client/index.js?");
+eval("/* eslint-env browser */\n/* eslint-disable no-var */\n__webpack_require__(/*! iframe-resizer */ \"./node_modules/iframe-resizer/index.js\");\n\nfunction main() {\n  var components = window['patternplate-components'];\n  var errors = [];\n  if (!components) {\n    errors.push(new Error('No patternplate components found. There might be errors during bundling.'))\n  }\n  if (errors.length > 0) {\n    errors.forEach(function (err) {\n      console.error(err)\n    });\n\n    return;\n  }\n\n  var component = getComponent(components, getData());\n  component.element = component.element || document.querySelector('[data-patternplate-mount]');\n  var mount = typeof component.mount === \"function\" ? component.mount : window[\"patternplate-mount\"]\n\n  mount(component);\n}\n\nmain();\n\nfunction getData() {\n  var vault = document.querySelector('[data-patternplate-vault]');\n  if (!vault) {\n    return {};\n  }\n  var encodedJson = vault.textContent;\n  if (!encodedJson) {\n    return {};\n  }\n  var json = decodeURIComponent(encodedJson);\n  if (!json) {\n    return {};\n  }\n  return JSON.parse(json);\n}\n\nfunction getComponent(components, data) {\n  const fileId = data.artifact.split('\\\\').join('/');\n  const top = components[fileId];\n\n  const moduleId = data.source.split('\\\\').join('/');\n  if (top[moduleId]) {\n    return top[moduleId];\n  }\n\n  return top;\n}\n\n\n//# sourceURL=webpack://patternplate-%5Bname%5D/./node_modules/@patternplate/cli/node_modules/@patternplate/demo-client/index.js?");
 
 /***/ }),
 

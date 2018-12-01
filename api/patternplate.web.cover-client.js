@@ -82,19 +82,19 @@ window["patternplate-cover-client"] =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./node_modules/@patternplate/cli/node_modules/@patternplate/cover-client/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./node_modules/@patternplate/cover-client/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@patternplate/cli/node_modules/@patternplate/cover-client/index.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@patternplate/cli/node_modules/@patternplate/cover-client/index.js ***!
-  \*****************************************************************************************/
+/***/ "./node_modules/@patternplate/cover-client/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@patternplate/cover-client/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* eslint-env browser */\n/* eslint-disable no-var */\nfunction main() {\n  var mount = window['patternplate-mount'];\n  var cover = window['patternplate-cover'];\n\n  cover.element = cover.element || document.querySelector('[data-patternplate-mount]');\n  mount(cover);\n}\n\nmain();\n\n\n//# sourceURL=webpack://patternplate-%5Bname%5D/./node_modules/@patternplate/cli/node_modules/@patternplate/cover-client/index.js?");
+eval("/* eslint-env browser */\n/* eslint-disable no-var */\nfunction main() {\n  var mount = window['patternplate-mount'];\n  var cover = window['patternplate-cover'];\n\n  cover.element = cover.element || document.querySelector('[data-patternplate-mount]');\n  mount(cover);\n}\n\nmain();\n\n\n//# sourceURL=webpack://patternplate-%5Bname%5D/./node_modules/@patternplate/cover-client/index.js?");
 
 /***/ })
 
